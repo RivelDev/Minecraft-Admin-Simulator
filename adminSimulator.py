@@ -147,7 +147,7 @@ if start == 1:
             #
             elif command == '/warn':
                 command2 = input('Введите ник нарушителя: ')
-                command3 = input('Введите время удержания варна в часах: ')
+                command3 = int(input('Введите время удержания варна в часах: '))
                 if command3 > 24:
                     print('Нельзя выдавать варн больше чем на 24 часа!')
                 elif command3 < 24:

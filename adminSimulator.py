@@ -16,9 +16,9 @@ if start == 1:
     print('Добрый день!')
     print('Ваша заявка на вступление в должность модератора была рассмотрена и принята!')
     print('Вы уже можете идти работать! Не забудьте свой пароль! (пароль: пароль, логин: ixcUwu_)')
-    
+
     time.sleep(4)
-    
+
     #2. Login
     print('-------------------------------------------------')
     print('[MINETODAY.ORG]')
@@ -32,30 +32,30 @@ if start == 1:
             print('ERROR')
     else:
         print('ERROR')
-    
+
     if l_login and l_passw == True:
         print('Вы успешно вошли. Подождите...')
         time.sleep(5)
-        
+
         #3.Main
         xp = 0
         #
         print('---------------------------------------------')
         print('Ожидайте, пока вам поступят жалобы для их рассмотрения.')
         #
-        time.sleep(11.4) 
+        time.sleep(11.4)
         #
         reports_list = ['сломали дом', 'аскоробляет', 'постаел песюн', 'Читы', 'Оскорбления', 'Спамит', 'Построил писю', 'Флуд', 'тим на бв', 'оскр мамы', 'лох', 'оскр сервера', 'неприличный ник', 'Неприличный префикс', 'Неприличный суффикс', 'Неприличный скин']
         nicknames_list = ['zuzya123', 'Boomforce', 'MNB', 'chubaba', '12314414', '123149844477', 'wuwe4ka', 'Menecca_', 'MyNet33', 'notprofe', 'riveldud', 'Kyero', 'ZaharTop', 'ruVi', 'Sanders', 'lemo4eeek', 'ROSIA_RUINA', 'gleb782', 'egortop', 'kFC_top']
         nicknames_list2 = ['paporotnek', '8988888', 'blacksuetolog', 'Mikhailovksy', 'FataLeer', 'neg0r', 'HEFOPMAJI', 'sduhauhsduahda', 'notya', 'lolik', 'pusiJusi', 'baranovichi', 'moscow_cow', 'SLAVA_UKRAINA', 'v_v_puten', 'OLYA1929', 'Stilet', 'kokocuk']
         screens_list = ['Докозательств нет.', 'Докозательства есть.', 'Спорные докозательства.']
-        
+
         screens_r = random.choice(screens_list)
         nicknames_r = random.choice(nicknames_list)
         nicknames_r2 = random.choice(nicknames_list2)
         reports_r = random.choice(reports_list)
-        
-        while True: 
+
+        while True:
             print('К вам поступила жалоба!')
             time.sleep(3)
             print('----------')
@@ -89,7 +89,7 @@ if start == 1:
                         nicknames_r2 = random.choice(nicknames_list2)
                         reports_r = random.choice(reports_list)
                         #
-                        
+
                     elif command3 > 360:
                         print('Нельзя забанить игрока больше, чем на 360 часов!')
                 else:
@@ -102,7 +102,7 @@ if start == 1:
                     time.sleep(2)
                     print('--------------------------------------------------------------------------------')
                     print(f'ixcUwu_ кикнул игрока {command2} с комментарием "{command3}"')
-                    print('----------------------------------------------------------------------------------')   
+                    print('----------------------------------------------------------------------------------')
                     time.sleep(8.3)
                     #
                     xp_r = random.randint(1, 5)
@@ -113,11 +113,11 @@ if start == 1:
                     screens_r = random.choice(screens_list)
                     nicknames_r = random.choice(nicknames_list)
                     nicknames_r2 = random.choice(nicknames_list2)
-                    reports_r = random.choice(reports_list)   
+                    reports_r = random.choice(reports_list)
                     #     
                 else:
-                        print('ERROR')                                                                                                                           
-            #
+                    print('ERROR')
+                    #
             elif command == '/mute':
                 command2 = input('Введите ник нарушителя: ')
                 command3 = int(input('Введите время наказания в часах: '))
@@ -129,7 +129,7 @@ if start == 1:
                         time.sleep(2)
                     print('--------------------------------------------------------------------------------')
                     print(f'ixcUwu_ замутил {command2} на {command3} часов с комментарием "{command4}"')
-                    print('----------------------------------------------------------------------------------')   
+                    print('----------------------------------------------------------------------------------')
                     time.sleep(11.1)
                     #
                     xp_r = random.randint(1, 5)
@@ -140,11 +140,11 @@ if start == 1:
                     screens_r = random.choice(screens_list)
                     nicknames_r = random.choice(nicknames_list)
                     nicknames_r2 = random.choice(nicknames_list2)
-                    reports_r = random.choice(reports_list)   
+                    reports_r = random.choice(reports_list)
                     #     
                 else:
-                        print('ERROR')  
-            #
+                    print('ERROR')
+                    #
             elif command == '/warn':
                 command2 = input('Введите ник нарушителя: ')
                 command3 = int(input('Введите время удержания варна в часах: '))
@@ -153,10 +153,10 @@ if start == 1:
                 elif command3 < 24:
                     command4 = input('Введите причину: ')
                     if command2 in nicknames_list2:
-                            time.sleep(2)
+                        time.sleep(2)
                     print('--------------------------------------------------------------------------------')
                     print(f'ixcUwu_ выдал предупреждение игроку {command2} с удержанием на {command3} часов с комментарием "{command4}"')
-                    print('----------------------------------------------------------------------------------')   
+                    print('----------------------------------------------------------------------------------')
                     time.sleep(13.1)
                     #
                     xp_r = random.randint(1, 5)
@@ -167,20 +167,20 @@ if start == 1:
                     screens_r = random.choice(screens_list)
                     nicknames_r = random.choice(nicknames_list)
                     nicknames_r2 = random.choice(nicknames_list2)
-                    reports_r = random.choice(reports_list)   
+                    reports_r = random.choice(reports_list)
                     #     
                 else:
-                        print('ERROR')  
-            #
+                    print('ERROR')
+                    #
             elif command == '/ignore':
-                 #
+                #
                 screens_r = random.choice(screens_list)
                 nicknames_r = random.choice(nicknames_list)
                 nicknames_r2 = random.choice(nicknames_list2)
-                reports_r = random.choice(reports_list)   
+                reports_r = random.choice(reports_list)
                 #    
-                print('Вы проигнорировали жалобу. Она передана другому сотруднику, а вы получили дебафф к опыту.') 
-            #
+                print('Вы проигнорировали жалобу. Она передана другому сотруднику, а вы получили дебафф к опыту.')
+                #
             elif command == '/console:debug':
                 print('--------------------')
                 time.sleep(0.5)
@@ -196,7 +196,7 @@ if start == 1:
                 screens_r = random.choice(screens_list)
                 nicknames_r = random.choice(nicknames_list)
                 nicknames_r2 = random.choice(nicknames_list2)
-                reports_r = random.choice(reports_list)   
+                reports_r = random.choice(reports_list)
                 #    
                 time.sleep(10)
                 print('----------------------')
@@ -204,7 +204,7 @@ if start == 1:
                 print('Exit debug mode...')
                 time.sleep(2)
             else:
-                 print('ERROR')
+                print('ERROR')
 elif start == 2:
     time.sleep(0.5)
     print('Выход...')
